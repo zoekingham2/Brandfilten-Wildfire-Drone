@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+  <title>Brandfilten</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- Leaflet -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="site-header">
+  <h1 class="site-title">Brandfilten</h1>
+  <img src="/static/images/logga.png" alt="Logo" class="site-logo">
+</header>
+
+<div id="main-content">
+
+
+
+  <!-- MAP SEKTION -->
+  <div id="map-section">
+    <div id="map-controls">
+      <button id="draw-btn" class="map-btn">&#9711; Markera område</button>
+      <button id="clear-btn" class="map-btn clear" style="display:none;">&#10005; Rensa område</button>
+      <span id="map-status">Klicka och dra på kartan för att övervaka ett område</span>
+    </div>
+
+    <div id="map"></div>
+    <span>Position: <strong id="coords">0, 0</strong></span>
+    <ul id="event-log">
+            <li class="log-placeholder">Inga händelser registrerade...</li>
+    </ul>
+  </div>
+
+  <!-- CAMERA SEKTION -->
+  <div id="camera-section">
+    <h2>Live Kamera</h2>
+    <img src="/video_feed">
+
+    <!-- SENSOR DATA PÅ EN RAD -->
+    <div id="sensor-row">
+      <span>Temperatur: <strong id="temp">0</strong> °C</span>
+      <span>Luftfuktighet: <strong id="hum">0</strong> %</span>
+    </div>
+  </div>
+</div>
+
+
+<!-- BRANDVARNING -->
+<div id="fire-warning">VARNING: POTENTIELL BRAND DETEKTERAD!</div>
+
+<!-- JS -->
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>

@@ -1,0 +1,14 @@
+<svg id="map-svg"
+     xmlns="http://www.w3.org/2000/svg"
+     width="100%"
+     height="100%"
+     viewBox="0 0 3508 2480"
+     preserveAspectRatio="xMidYMid meet">
+
+  <image href="karta.png"
+         x="0"
+         y="0"
+         width="3508"
+         height="2480" />
+
+</svg>

@@ -1,0 +1,189 @@
+/* ===== GLOBAL ===== */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+  color: #222;
+}
+
+/* ===== HEADER MED LOGGA ===== */
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  padding: 20px;
+  border-bottom: 3px solid #000000;
+  
+}
+.site-title {
+  font-family: 'Audiowide', sans-serif;
+  font-size: 2.4rem;
+  margin: 0;
+  color: #b30000;
+}
+
+.site-logo {
+  height: 80px;
+  width: auto;
+}
+
+/* ===== TITLAR ===== */
+h1, h2 {
+  text-align: center;
+  margin-top: 0px;
+}
+
+/* ===== MAIN CONTENT ===== */
+#main-content {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  align-items: flex-start; 
+}
+
+#map-section, #camera-section {
+  flex: 1; 
+  width: 0;
+}
+
+/* ===== MAP ===== */
+#map {
+  height: 600px;
+  border: 3px solid #000000;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.15);
+}
+
+/* ===== MAP BUTTONS ===== */
+#map-controls {
+  margin-bottom: 10px;
+}
+
+.map-btn {
+  padding: 10px 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  background-color: #000000;
+  color: white;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: 0.2s;
+}
+
+.map-btn:hover {
+  background-color: #333333;
+}
+
+.map-btn.clear {
+  background-color: #000000;
+}
+
+.map-btn.clear:hover {
+  background-color: #333333;
+}
+
+// ======= Draw Patrol-knappen =======
+#draw-btn {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+#draw-btn:hover {
+  background-color: #333333;
+}
+
+#map-status {
+  font-size: 0.75rem;
+  color: #666;     
+  vertical-align: middle;
+}
+
+#clear-btn {
+  background-color: #000000;
+  color: #ffffff;
+  display: none; 
+}
+
+#clear-btn:hover {
+  background-color: #333333;
+}
+
+/* ===== CAMERA ===== */
+#camera-section img {
+  width: 100%;
+  height: 600px; 
+  border-radius: 10px;
+  border: 3px solid #000000;
+  display: block; 
+  object-fit: cover;
+}
+
+/* ===== SENSOR DATA BOX ===== */
+.sensor-box {
+  background: white;
+  padding: 15px;
+  margin: 20px auto;
+  border-radius: 10px;
+  border: 2px solid #000000;
+  width: fit-content;
+  text-align: left;
+}
+
+/* ===== FIRE WARNING ===== */
+#fire-warning {
+  display: none;
+
+  position: fixed;
+  bottom: 20px;   
+  right: 60px;    
+  
+  transform: none; 
+
+  color: #b30000;
+  background: white;
+  padding: 10px;  
+  font-size: 1.5rem;
+  font-weight: bold;
+  width: 800px;
+  max-width: 95vw;
+
+  border: 5px solid black;
+  border-radius: 15px;
+
+  z-index: 9999;
+  text-align: center;
+
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% { opacity: 0; }
+}
+
+
+#event-log {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#event-log li {
+    padding: 5px 10px;
+    border-bottom: 1px solid #eee;
+    font-family: monospace;
+    font-size: 0.9rem;
+}
+
+.log-alert {
+    color: #b30000;
+    background-color: #ffe6e6;
+    font-weight: bold;
+}
+
+.log-placeholder {
+    color: #999;
+    font-style: italic;
+}
