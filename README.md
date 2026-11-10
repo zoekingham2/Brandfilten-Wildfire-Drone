@@ -1,14 +1,19 @@
-# InfoCom Drone Project - Part 5 - Multi-drone System
-Install the required Python packages if not done already (you probably did this in the previous assignments):
-```
-sudo apt update
-sudo apt install python3-socketio
-sudo apt install python3-engineio
-sudo apt install python3-flask-socketio
-sudo apt install python3-flask-cors
-sudo apt install python3-geopy
-```
+# Brandfilten – Wildfire Monitoring Drone
+Brandfilten is a university group project developed by four students at Lund University, exploring how drone technology can assist emergency services with wildfire monitoring.
 
+Project features
+
+The prototype combines interactive map-based drone simulation, live video, temperature and humidity monitoring, and fire alerts displayed through a web interface.
+
+My contributions
+
+I took primary responsibility for the Python programming of the interactive map. I also worked on the HTML-based web interface and contributed to development and Raspberry Pi integration throughout the project.
+
+Technologies
+
+Python · JavaScript · HTML · Raspberry Pi · Git/GitHub
+
+----------------------------------------------------------------------------------------------------------------------------------------
 ## On the Server Pi:
 Go to `/webserver`, start your Redis server (if it is not already running, which it probably is – test using `redis-cli`) and run the three flask servers that make up the server side of the drone application:
 
@@ -49,6 +54,4 @@ flask run --host 0.0.0.0
     ```
     http://localhost:5000
     ```
-
-Note: Don't use `python3 build.py`, `python3 route_planner.py`, `python3 database.py` or `python3 drone.py` to run the webservers, since this may not provide all the functionality required by the application.
 
