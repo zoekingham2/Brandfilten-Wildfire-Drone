@@ -13,13 +13,14 @@ Technologies
 
 Python · JavaScript · HTML · Raspberry Pi · Git/GitHub
 
-<img width="1323" height="445" alt="bfs" src="https://github.com/user-attachments/assets/aa1dfb94-e94f-437e-b7c7-7336f4912981" />
-
-<img width="1334" height="774" alt="a5bef61a-be8e-4fc8-a70c-f839e21f87b1" src="https://github.com/user-attachments/assets/63cde393-bf18-4af8-b991-165460e29e9e" />
-<img width="721" height="509" alt="ba059381-44ab-422d-8222-0fa5b9f30d81" src="https://github.com/user-attachments/assets/8e7e66d6-c950-4438-83be-bdab41a42dc6" />
 
 https://github.com/user-attachments/assets/1f88eff8-9caf-4867-9ce5-e6bebc265401
 
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/63cde393-bf18-4af8-b991-165460e29e9e" width="48%" />
+  <img src="https://github.com/user-attachments/assets/8e7e66d6-c950-4438-83be-bdab41a42dc6" width="48%" />
+</p>
 
 ----------------------------------------------------------------------------------------------------------------------------------------
 ## On the Server Pi:
